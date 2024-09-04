@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Website Static UI</title>
+    <style>
+        body {
+            font-family: Tahoma , sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Header */
+        .header {
+            
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            font-family: Roboto;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: black;
+            font-size:25px;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff3e6c;
+            border-radius: 10px;
+        }
+
+        /* Search bar */
+        .search-bar {
+            margin: 40px auto;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-family:Times New Roman
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar button {
+            padding: 15px;
+            background-color: #e73d38;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        /* Main content */
+        .main-content {
+            padding: 20px;
+        }
+
+        .main-content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category, .brands, .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            border: 3px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .footer {
+            background-color: #282c3f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            width: 25%; /* Adjust width as needed */
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="https://images.indianexpress.com/2021/01/myntra.png" width="100" height="75" alt="logo">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Studio<sup style="color: red;">NEW</sup></a>
+        <img src="https://media.istockphoto.com/id/1359181702/vector/shopping-cart-vector-icon-trolley-flat-design-illustration-business-concept-symbol-in-eps-10.jpg?s=612x612&w=0&k=20&c=k7cWYt8Zqay8YX3f8Vt4q1tQAWdx4OmYp1NVwnzmj5s=" width="50" height="50" alt="cart">
+        <img src="https://i.pinimg.com/564x/3f/9f/5b/3f9f5b8c9f31ce16c79d48b9eeda4de0.jpg" width="50" height="50" alt="profile">
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products,brands and more">
+        <button>Search</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>CATEGORIES TO CART</h2>
+        <div class="category">
+            <div class="card">
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%27s-fashion-template-design-2bf4c554ccc9a423db15db6e58f770b5_screen.jpg?ts=1687028854" alt="Men's Fashion">
+                <h3>Men's Fashion</h3>
+            </div>
+            <div class="card">
+                <img src="https://marketplace.canva.com/EAGARruL4eU/2/0/1600w/canva-red-and-grey-minimalistic-fashion-vlog-youtube-thumbnail-sa3fCOShjtk.jpg" alt="Women's Fashion">
+                <h3>Women's Fashion</h3>
+            </div>
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/110/333/non_2x/fashion-model-kids-free-photo.jpg" alt="Kids' Fashion">
+                <h3>Kids' Fashion</h3>
+            </div>
+            <div class="card">
+                <img src="https://media.designcafe.com/wp-content/uploads/2021/07/23190237/tribal-home-decor-with-carved-wooden-artefacts.jpg" alt="Home Decor">
+                <h3>Home Decor</h3>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1339055637/photo/back-to-school-background-stationery-supplies-in-the-school-bag-banner-design-education-on.jpg?s=612x612&w=0&k=20&c=64U8pLGMWIV7ldiv23XaU5tGUuXqTrEemo_HEueIs40=" alt="Bag Packs">
+                <h3>Bag Packs</h3>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/598795718/photo/family-luggages.jpg?s=612x612&w=0&k=20&c=8SVNda_msHFV2OrdXUtU4G-boadkl-wlmN2TBm7m2Jg=" alt="Luggage bags">
+                <h3>Luggage Bags</h3>
+            </div>
+            <div class="card">
+                <img src="https://www.mummynutrition.com/wp-content/uploads/2018/10/IMG_8566-1440x960.jpg" alt="Infants Essentials">
+                <h3>Infants Essentials</h3>
+            </div>
+        </div>
+
+
+
+<h2>BRAND RUSH</h2>
+        <div class="brands">
+            <div class="card">
+                <img src="https://www.indiaretailing.com/wp-content/uploads/2016/08/soch-660x450-1.jpg" alt="Soch">
+                <h3>Soch</h3>
+            </div>
+            <div class="card">
+                <img src="https://elementsmall.com/wp-content/uploads/2016/08/Louis-Philippe-logo-final.png" alt="Louis Philippe">
+                <h3>Louis Philippe</h3>
+            </div>
+            <div class="card">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/d32aa2106634591.Y3JvcCwxMTYyLDkwOSwyNjEsMA.jpg" alt="Van Heusen">
+                <h3>Van Heusen</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+        <h2 align="center">TOP PRODUCTS</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0031/1472/9541/files/Crop_Sneakers-LANDSCAPE-M_Banner.jpg?v=1710333269" alt="Sneakers">
+                <h3>Sneakers Shoes</h3>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAYi_EVG_a4daOKNjXR1du8joRwjqTwx7nAg&s">
+                <h3>Fossil Digital Watch</h3>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/529870497/photo/fashionable-woman-posing-in-red-gown.jpg?s=612x612&w=0&k=20&c=o3YiT_7T7QOXkeUU5lDtZ92i5RlQ7SXXgLWtBDxc9vY=" alt="DRESS">
+                <h3>Party Dress</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>©️ 2024 Myntra. All Rights Reserved.</p>
+
+
+
+
+
+        <div class="container">
+        <div class="column">
+
+
+<h3><b>CUSTOMER POLICIES</b></h3><ul>
+<p align="left">
+<li>Contact Us<br>
+<li>FAQ<br>
+<li>T&C<br>
+<li>Terms Of Use<br>
+<li>Track Orders<br>
+<li>Shipping<br>
+<li>Cancellation<br>
+<li>Returns<br>
+<li>Privacy policy<br>
+<li>Grievance Officer</ul></p>
+</div>
+
+<div class="column">   
+
+            <h3><b>USEFUL LINKS</b></h3>
+            <ul>
+                <li>Blog<br>
+<li>Careers
+<li>Site Map<br>
+<li>Corporate Information<br>
+<li>Whitehat<br>
+<li>Cleartrip</p>
+
+            </ul>
+        </div>
+
+
+<div class="column">
+<h3><b>KEEP IN TOUCH</b></h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/480px-Facebook_logo_%28square%29.png" width="50" height="50"alt="fb">
+
+<img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" width="50" height="50"alt="twitter">
+
+<img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" width="50" height="50"alt="yt">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" width="50" height="50"alt="ig"><br><br><br>
+
+In case any concern, <span style="color: blue;">Contact us</span>
+
+</div>
+
+
+<div class="column">
+<h3><b>REGISTERED OFFICE ADDRESS</b></h3>
+<p align="left">
+Buildings Alyssa,<br>
+Begonia and Clover situated in Embassy Tech Village,<br>
+Outer Ring Road,<br>
+Devarabeesanahalli Village,<br>
+Varthur Hobli,<br>
+Bengaluru – 560103, India<br>
+CIN: U72300KA2007PTC041799<br>
+Telephone:<span style="color: blue;"> +91-80-61561999</span></p>
+</div>
+    </div>
+ 
+
+
+
+
+
+
+
+<h3><b>MYNTRA APP</b></h3>
+Myntra, India’s no. 1 online fashion destination justifies its fashion relevance by bringing something new and chic to the table on the daily. Fashion trends seem to change at lightning speed, yet the Myntra shopping app has managed to keep up without any hiccups. In addition, Myntra has vowed to serve customers to the best of its ability by introducing its first-ever loyalty program, The Myntra Insider. Gain access to priority delivery, early sales, lucrative deals and other special perks on all your shopping with the Myntra app. Download the Myntra app on your Android or IOS device today and experience shopping like never before!
+
+
+<br>
+
+
+
+
+
+<h3><b>POPULAR SEARCHES</b></h3>
+Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+<br>
+<br>
+
+
+<p>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You can also shop for your friends, family and loved-ones and avail our gift services for special occasions.</p>
+    </div>
+
+</body>
+</html>
